@@ -16,6 +16,10 @@ public class JeissonCasallasModel {
     @Column(name="RAZON")
     private String razon;
 
+
+    public JeissonCasallasModel(){
+    }
+    
     public JeissonCasallasModel(int pregunta, String letra, String razon){
         this.pregunta=pregunta;
         this.letra=letra;

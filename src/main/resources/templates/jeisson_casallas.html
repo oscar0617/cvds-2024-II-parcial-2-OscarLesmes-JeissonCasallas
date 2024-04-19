@@ -1,0 +1,29 @@
+<h1 style="text-align: center;">Jeisson Casallas</h1>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: center;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th> Pregunta </th>
+            <th> Letra </th>
+            <th> Razón </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="jeissoncasallasmodel: ${list}">
+            <td><span th:text="${jeissoncasallasmodel.pregunta}"> pregunta </span></td>
+            <td><span th:text="${jeissoncasallasmodel.letra}"> letra </span></td>
+            <td><span th:text="${jeissoncasallasmodel.razon}"> razon </span></td>
+        </tr>
+    </tbody>
+</table>
